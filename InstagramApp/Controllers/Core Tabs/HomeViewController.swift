@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
         
         handleNotAuthenticated()
     }
-    
+     
     private func handleNotAuthenticated() {
         // Check auth status
         if Auth.auth().currentUser == nil {
@@ -29,8 +29,6 @@ class HomeViewController: UIViewController {
             loginVC.modalPresentationStyle = .fullScreen
             present(loginVC, animated: false)
         }
-        
-        
     }
 }
 
